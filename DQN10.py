@@ -174,7 +174,7 @@ class DQNAgent:
                 
 			# save model
 			if t % save_step == 0 and weights_file is not None:
-				self.save_model(weights_file)
+				self.save_model(weights_file+t)
 
 	def load_model(self,weights_file):
 		'''
